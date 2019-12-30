@@ -10,7 +10,7 @@ void setup(void)
 	delay(1000);
 	
     read_flash_param();
-    Serial.begin(baud_rate);
+    Serial.begin(115200);
 
     msg = SubGHz.init();
     if (msg != SUBGHZ_OK)
